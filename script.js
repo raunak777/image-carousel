@@ -34,7 +34,7 @@ $(function () {
             colorChange();
             $($slides).animate({
                 marginLeft: '-=100%'
-            }, 2000, "linear", function () {
+            }, 2000, function () {
                 if (curSlide >= slideCount) {
                     curSlide = 1;
                     $(this).css("margin-left", "00%");
