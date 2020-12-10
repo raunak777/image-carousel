@@ -34,7 +34,7 @@ $(function () {
             colorChange();
             $($slides).animate({
                 marginLeft: '-=100%'
-            }, 800, "linear", function () {
+            }, 2000, "linear", function () {
                 if (curSlide >= slideCount) {
                     curSlide = 1;
                     $(this).css("margin-left", "00%");
@@ -42,7 +42,7 @@ $(function () {
                     $("#2, #3, #4, #5").css("color", "black");
                 }
             });
-        }, 2000);
+        }, 3000);
     }
 
     function stopSlider() {
